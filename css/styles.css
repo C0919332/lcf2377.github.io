@@ -1,0 +1,208 @@
+/*shriya sharma*/
+/*c0919332*/
+/*style.css*/
+/*term project: vases*/
+/*website name: urban vases*/
+
+/* body styling*/
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+/*header styling*/
+header {
+  background-color: hsl(0, 22%, 95%);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: solid;
+  text-decoration-color: #111;
+
+}
+/*logo image*/
+
+.logo {
+  width: 50px; 
+  height: 50px;
+  position: absolute;
+  top: 10px; 
+  left: 10px; 
+}
+/*main body styling*/
+
+main {
+  display: block;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/*header styling*/
+header h1 {
+  color: #fff;
+  display: inline-block;
+}
+
+/*navigation bar styling*/
+nav {
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: hsl(321, 10%, 39%);
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+  text-shadow: #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+img {
+  width: 400px;
+  height: 350px;
+  border-radius: 0%;
+}
+
+footer p    {
+    
+  font-size: 0.75em;
+  text-align: center;
+  color: #000;
+  padding: 0 1em;
+}
+
+footer p a  {
+  color: #000;
+  text-decoration: none;}
+
+/*special page*/
+
+.product-of-the-week h1{
+  color: #87677c;
+}
+h5{
+  text-align: center;
+  color: #670c47;
+}
+h2{
+  color: #87677c; 
+}
+
+.product-of-the-week{
+  text-align: center;
+  color: antiquewhite;
+
+}
+.product-of-the-week img {
+  margin-top: 20px;
+}
+h1{
+  color: #ac287e;
+}
+h4{
+  text-align: center;
+  color: #670c47;
+}
+h3{
+  color: #ac287e;
+  text-align: center;
+}
+
+/* Figure caption animation */
+.caption {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+ 
+}
+
+.vase-figure:hover .caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Container for the images */
+.vase-box {
+  display: flex;
+  justify-content: space-between; 
+  text-align: center;
+}
+
+/* Style for each image figure */
+.vase-figure {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  transform-style: preserve-3d; /* Preserve 3D transformations */
+  transform: perspective(1000px); /* Set the perspective for the 3D effect */
+  transition: transform 0.5s; /* Add a smooth transition effect */
+}
+
+/* Apply 3D transformation on hover */
+.vase-figure:hover {
+  transform: perspective(1000px) rotateY(20deg); /* Adjust the rotation angle as needed */
+}
+
+/* Responsive styles for different viewports */
+
+@media only screen and (max-width: 768px) {
+  .container {
+      width: 90%; /* Adjust as needed for smaller screens */
+  }
+
+  header img {
+      width: 100%;
+      height: auto;
+  }
+
+  .vase-box {
+      flex-direction: column; /* Stack images vertically on smaller screens */
+      align-items: center;
+  }
+}
+
+footer {
+  background-color: rgb(131, 61, 131); /* Set the background color */
+  color: #fff; /* Set the text color */
+  text-align: center; /* Center-align text */
+  padding: 20px; /* Add padding for spacing */
+}
+
+/* Style for footer links on hover */
+footer a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+

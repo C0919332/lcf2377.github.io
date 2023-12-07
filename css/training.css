@@ -1,0 +1,135 @@
+/* training.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: hsl(0, 22%, 95%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: solid;
+    text-decoration-color: #111;
+    position: relative;
+}
+ /* mobile view*/
+.mobile h2,h3{
+    text-decoration:solid;
+    text-align: center;
+    color: #723232;
+}
+.mobile p{
+    text-align: center;
+    color: #af4c9d;
+ font-style: bold;
+}
+nav {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: hsl(321, 10%, 39%);
+}
+
+nav li {
+    float: left;
+    border-right: 1px solid #bbb;
+    text-shadow: #bbb;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+main {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+caption, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+caption {
+    background-color: #af4c9d;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+th, td {
+    padding: 12px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tbody tr.even {
+    background-color: #f9f9f9;
+}
+
+tbody tr.odd {
+    background-color: #ffffff;
+}
+
+tbody tr:hover {
+    background-color: #cce5ff;
+}
+
+footer {
+    background-color: #af4c9d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {	
+
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */ 
+ .tablet-desktop {display: block;
+}
+ .mobile {
+           display: none;
+}
+
+}

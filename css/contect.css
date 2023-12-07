@@ -1,0 +1,151 @@
+/* contact.css */
+
+body, h1, h2, p, ul, li, fieldset, legend, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/*logo image*/
+
+.logo {
+    width: 50px; 
+    height: 50px;
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+  }
+  
+/* Main styles */
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+
+/* Form styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Style the navigation menu */
+nav {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgb(148, 69, 132);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #9e5083;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: hsl(321, 10%, 39%);
+  }
+  
+ nav li {
+    float: left;
+    border-right: 1px solid #bbb;
+    text-shadow: #bbb;
+  }
+  
+ nav li:last-child {
+    border-right: none;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+ nav li a:hover:not(.active) {
+    background-color: #111;
+  }
